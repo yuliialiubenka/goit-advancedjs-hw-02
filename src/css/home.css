@@ -1,0 +1,33 @@
+.home-page {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.home-page h1 {
+    margin-bottom: 32px;
+}
+
+.task-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.task-list li {
+    flex: 0 0 160px;
+}
+
+.task-link {
+    width: 100%;
+}
+
+@media (max-width: 560px) {
+    .task-list {
+        flex-direction: column;
+    }
+}

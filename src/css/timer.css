@@ -1,0 +1,94 @@
+.task-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.task-card,
+.snackbar-form {
+    width: min(100%, 480px);
+    padding: 32px;
+    border-radius: 8px;
+    background: var(--color-white);
+    box-shadow: var(--shadow-card);
+}
+
+.task-card h1 {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.timer-controls input,
+.snackbar-form input[type="number"] {
+    width: 100%;
+    min-height: 40px;
+    padding: 0 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font: inherit;
+}
+
+.timer-controls .button {
+    flex: 0 0 80px;
+}
+
+.timer-controls input:disabled {
+    background-color: var(--color-input-disabled);
+}
+
+.timer-controls .button:disabled {
+    color: var(--color-white);
+    background-color: var(--color-disabled);
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.label {
+    margin-top: 8px;
+    color: var(--color-muted);
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .task-card,
+    .snackbar-form {
+        padding: 24px;
+    }
+
+    .timer-controls {
+        flex-direction: column;
+    }
+
+    .timer-controls .button {
+        flex-basis: 40px;
+    }
+
+    .timer {
+        gap: 8px;
+    }
+
+    .value {
+        font-size: 26px;
+    }
+}

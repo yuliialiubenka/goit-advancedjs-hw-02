@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timer</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <a class="button back-link" href="./index.html">Back</a>
+        <main class="task-page timer-page">
+            <section class="task-card" aria-labelledby="timer-title">
+                <h1 id="timer-title">Timer</h1>
+                <div class="timer-controls">
+                    <input type="text" id="datetime-picker" aria-label="Choose a date and time" />
+                    <button class="button" type="button" data-start disabled>Start</button>
+                </div>
+                <div class="timer" aria-live="polite">
+                    <div class="field">
+                        <span class="value" data-days>00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="field">
+                        <span class="value" data-hours>00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="field">
+                        <span class="value" data-minutes>00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="field">
+                        <span class="value" data-seconds>00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script type="module" src="./js/1-timer.js"></script>
+    </body>
+</html>
